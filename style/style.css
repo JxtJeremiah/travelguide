@@ -25,6 +25,7 @@ body{
     margin-right: 70px;
     line-height: 70px;
     text-align: right;
+    display: inline;
 }
 .left{
     margin-left: 100px;
@@ -54,7 +55,7 @@ body{
 }
 .text3{
     text-align: center;
-    font-family: 'Times New Roman';
+    font-family: 'Lucida sans';
     font-weight: lighter;
     font-size: 130%;
     color: rgb(14, 13, 13)
@@ -90,11 +91,12 @@ body{
 .bold2{
     color: rgba(26, 26, 26, 0.644);
     text-align: center;
+    font-family: 'Lucida sans';
 }
 .text4{
     color: rgb(14, 13, 13);
     text-align: center;
-    font-family: 'Times New Roman';
+    font-family: 'Lucida sans';
     font-weight: 600;
     font-size: 130%;
     font-weight: lighter;
@@ -107,10 +109,27 @@ body{
     text-align: center;
     color: white;
 }
-.text6{
-    padding-top: 30px;
-    text-align: center;
-    font-family: 'times new roman';
-    font-size: 130%;
-    font-weight: lighter;
+@media screen and (max-width:760px){
+    .master{
+        flex-direction: column;
+    }
+    .back{
+        background-size: contain;
+    }
+    .left{
+        margin-left: 20px;
+    }
+    .right{
+        margin-right: 20px;
+    }
+    .div2{
+        padding-left:  30px;
+        padding-right: 30px;
+    }
+    .back a{
+        position: relative;
+        bottom: 75px;
+        padding: 3px 7px;
+        font-size: 15px;
+    }
 }
